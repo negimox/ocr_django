@@ -6,9 +6,8 @@ from django.contrib import messages
 from django.shortcuts import render
 from PIL import Image
 
-# you have to install tesseract module too from here - https://github.com/UB-Mannheim/tesseract/wiki
 pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # Path to tesseract.exe
+    r"/usr/bin/tesseract"
 )
 
 
